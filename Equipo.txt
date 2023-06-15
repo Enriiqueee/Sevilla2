@@ -1,0 +1,1 @@
+[{"id":"1","nombre":"SevillaFC","categoria":"Primera"},{"id":"2","nombre":"Real Betis balompié","categoria":"Primera"}]

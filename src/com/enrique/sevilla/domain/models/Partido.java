@@ -1,43 +1,43 @@
 package com.enrique.sevilla.domain.models;
 
-public class partido {
+public class Partido {
 
-    private Integer id;
-    private equipo Elocal;
-    private equipo Evisitante;
-    private arbitro arbitro;
+    private String id;
+    private Equipo Elocal;
+    private Equipo Evisitante;
+    private Arbitro arbitro;
     private String resultado;
     private String Fpartido;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public equipo getElocal() {
+    public Equipo getElocal() {
         return Elocal;
     }
 
-    public void setElocal(equipo elocal) {
+    public void setElocal(Equipo elocal) {
         Elocal = elocal;
     }
 
-    public equipo getEvisitante() {
+    public Equipo getEvisitante() {
         return Evisitante;
     }
 
-    public void setEvisitante(equipo evisitante) {
+    public void setEvisitante(Equipo evisitante) {
         Evisitante = evisitante;
     }
 
-    public arbitro getArbitro() {
+    public Arbitro getArbitro() {
         return arbitro;
     }
 
-    public void setArbitro(arbitro arbitro) {
+    public void setArbitro(Arbitro arbitro) {
         this.arbitro = arbitro;
     }
 

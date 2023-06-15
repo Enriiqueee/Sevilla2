@@ -1,6 +1,6 @@
 package com.enrique.sevilla.domain.models;
 
-public class entrenador extends Persona{
+public class Entrenador extends Persona{
 
     private String estrategia;
 }

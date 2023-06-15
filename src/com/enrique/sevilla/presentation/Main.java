@@ -17,30 +17,37 @@ public class Main {
         ArbitroRepository arbitroRepository = new ArbitroDataRepository(ArbitroFileLocalDataSource.getInstance());
 
 
+        Jugador jugador = new Jugador();
+        jugador.setId(12);
+        jugador.setDemarcacion("Delantero");
+        jugador.setNombre("Pepe");
+        jugador.setApellidos("Arebas");
+        jugador.setFnacimiento("12-11-2004");
+
         Equipo sevilla = new Equipo();
         sevilla.setId("1");
         sevilla.setCategoria("Primera");
         sevilla.setNombre("SevillaFC");
-        sevilla.setJugadores("Bono");
+        //sevilla.setJugadores(12);
 
         Equipo betis = new Equipo();
         betis.setId("2");
         betis.setCategoria("Primera");
         betis.setNombre("Real Betis balompié");
-        betis.setJugadores("Claudio Bravo");
+        //betis.setJugadores(12);
 
         AddEquiposUseCase addEquipoUseCase = new AddEquiposUseCase(equipoRepository);
         addEquipoUseCase.execute(sevilla);
         addEquipoUseCase.execute(betis);
 
         Arbitro arbitro = new Arbitro();
-        arbitro.setId("1");
+        arbitro.setId(1);
         arbitro.setNombre("Jesus");
         arbitro.setApellidos("Gil Manzano");
-        arbitro.setFechaNacimento("04/02/1984");
+        arbitro.setFnacimiento("04/02/1984");
         arbitro.setCategoria("Primera");
 
-        AddArbritroUseCase addArbritroUseCase = new AddArbritroUseCase(arbitroRepository);
+        AddArbitroUseCase addArbritroUseCase = new AddArbitroUseCase(arbitroRepository);
         addArbritroUseCase.execute(arbitro);
 
         GetEquipoUseCase getEquipoUseCase = new GetEquipoUseCase(equipoRepository);
@@ -48,13 +55,13 @@ public class Main {
 
         Partido partido = new Partido();
         partido.setId("1");
-        partido.setEquipoLocal(getEquipoUseCase.execute("1"));
-        partido.setEquipoVisitante(getEquipoUseCase.execute("2"));
+        partido.setEvisitante(getEquipoUseCase.execute("1"));
+        partido.setEvisitante(getEquipoUseCase.execute("2"));
         partido.setArbitro(getArbitroUseCase.execute("1"));
         partido.setResultado("5-0");
-        partido.setFechaPartido("21/05/2022");
+        partido.setFpartido("21/05/2022");
 
-        AddPartidoUseCase addPartidoUseCase = new AddPartidoUseCase(partidoRepository);
+        AddPartidosUseCase addPartidoUseCase = new AddPartidosUseCase(partidoRepository);
         addPartidoUseCase.execute(partido);
 
 

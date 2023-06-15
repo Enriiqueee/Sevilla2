@@ -1,6 +1,6 @@
 package com.enrique.sevilla.domain.models;
 
-public class arbitro {
+public class Arbitro extends Persona{
     private String categoria;
 
     public String getCategoria() {
@@ -10,4 +10,6 @@ public class arbitro {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
+
+
 }

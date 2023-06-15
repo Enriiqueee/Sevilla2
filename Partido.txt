@@ -1,0 +1,1 @@
+[{"id":"1","Evisitante":{"id":"2","nombre":"Real Betis balompié","categoria":"Primera"},"resultado":"5-0","Fpartido":"21/05/2022"}]

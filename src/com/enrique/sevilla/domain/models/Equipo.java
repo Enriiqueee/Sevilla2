@@ -1,16 +1,16 @@
 package com.enrique.sevilla.domain.models;
 
-public class equipo {
-    private Integer id;
+public class Equipo {
+    private String id;
     private String nombre;
     private String categoria;
-    private jugador jugadores;
+    private Jugador jugadores;
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -30,11 +30,11 @@ public class equipo {
         this.categoria = categoria;
     }
 
-    public jugador getJugadores() {
+    public Jugador getJugadores() {
         return jugadores;
     }
 
-    public void setJugadores(jugador jugadores) {
+    public void setJugadores(Jugador jugadores) {
         this.jugadores = jugadores;
     }
 }
